@@ -13,7 +13,7 @@ const {
 
 const server = http.createServer(app);
 const io = socketio(server);
-const botName = "FreeChat Bot";
+const botName = "Chat Bot";
 
 io.on("connection", (socket) => {
   socket.on("joinRoom", ({ username, room }) => {
